@@ -1,0 +1,14 @@
+ActivityPush
+Copyright (C) 2026 AthenaHibou
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Data sources / attribution:
+- StarRailAssistant public API: https://starrailassistant.top/public-api/
+- Endfield version calendar: https://ef-cal.mogujun.icu/api/v1/events
+
+This project is not affiliated with HoYoverse, Kuro Games, or any of the
+data providers above. API availability and response formats may change.

@@ -1,0 +1,24 @@
+{
+  "查询相关": {
+    "desc": "活动与版本查询",
+    "data": [
+      {"name": "活动查询", "eg": ">活动查询 原神", "need_ck": false, "need_sk": false, "need_admin": false},
+      {"name": "版本查询", "eg": ">版本查询 崩铁", "need_ck": false, "need_sk": false, "need_admin": false}
+    ]
+  },
+  "提醒相关": {
+    "desc": "活动到期提醒（3/2/1 天 @ 你）",
+    "data": [
+      {"name": "活动提醒", "eg": ">活动提醒 原神 新芽相助", "need_ck": false, "need_sk": false, "need_admin": false},
+      {"name": "我的提醒", "eg": ">我的提醒", "need_ck": false, "need_sk": false, "need_admin": false},
+      {"name": "关闭活动提醒", "eg": ">关闭活动提醒 新芽相助", "need_ck": false, "need_sk": false, "need_admin": false}
+    ]
+  },
+  "群推送": {
+    "desc": "群级活动到期汇总推送",
+    "data": [
+      {"name": "开启活动推送", "eg": ">开启活动推送", "need_ck": false, "need_sk": false, "need_admin": false},
+      {"name": "关闭活动推送", "eg": ">关闭活动推送", "need_ck": false, "need_sk": false, "need_admin": false}
+    ]
+  }
+}
