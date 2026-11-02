@@ -18,10 +18,10 @@ GsCore 插件：多游戏活动 / 版本查询与到期提醒。
 ## 环境要求
 
 - Python >= 3.11
-- GsCore >= 0.11.x（推荐）
+- GsCore 上游 `0.11.x`（主目标），或 `AthenaHibou/gsuid_core` 的 `main`（基于 `0.10.7` + 定制补丁）
 - AI Core 可选；不开启时，用户命令仍然可用，只是 AI 工具不会注册
 
-> 0.10.7 的早期快照可能没有 AI 工具的 `covers/aliases` 元数据。缺少时插件通常仍能加载，但 AI 召回效果会下降。正式支持版本以 `0.11.x` 为准。
+> 上游当前基线为 `0.11.2`；`AthenaHibou/gsuid_core` 的 `main` 基于 `0.10.7` + 定制补丁，AI Core 行为可能与上游不同。0.10.7 早期快照可能没有 `covers/aliases`；缺少时插件通常仍能加载，但 AI 召回会下降。
 
 ## 安装
 
@@ -92,8 +92,10 @@ git clone https://github.com/AthenaHibou/ActivityPush
 
 ## 兼容性
 
-- 在 GsCore `0.11.x` 上作为主要支持基线。
-- 使用了 `ai_tools` 的 `covers` / `aliases` 元数据；旧核心没有这些参数时会被忽略，不影响基本命令。
+- **主目标**：上游 `Genshin-bots/gsuid_core` 的 `master`，当前为 `0.11.2`。
+- **Fork 目标**：`AthenaHibou/gsuid_core` 的 `main`，基于 `0.10.7` + 定制补丁；AI Core 行为可能与上游不同。
+- 代码按上游 `0.11.2` 的 API 编写；导入与关键符号已做过静态对照，实际运行仍取决于 AI Core 配置和数据库状态。
+- 使用了 `ai_tools` 的 `covers` / `aliases` 元数据；旧核心没有这些参数时会被忽略，不影响基本命令，但 AI 召回会下降。
 - 使用了 `BaseModel` / `GsAdminModel` 的 Web 后台注册；如果核心数据库或后台 API 有破坏性变更，需要同步适配。
 
 ## License
